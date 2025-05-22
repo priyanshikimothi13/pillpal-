@@ -1,0 +1,158 @@
+:root {
+    --pink: #FF9AA2;
+    --light-pink: #FFB7B2;
+    --peach: #FFDAC1;
+    --mint: #E2F0CB;
+    --teal: #B5EAD7;
+    --text: #5E5E5E;
+}
+
+body {
+    font-family: 'Short Stack', 'Comic Neue', cursive;
+    background-color: var(--mint);
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: var(--pink);
+    margin: 0;
+}
+
+.logo span {
+    color: var(--light-pink);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero-text h2 {
+    font-size: 2.2rem;
+    color: var(--pink);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--pink);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--light-pink);
+    transform: scale(1.05);
+}
+
+/* Features Grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-emoji {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--light-pink);
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+/* Medicine List */
+.medicines-list {
+    margin-top: 30px;
+}
+
+.med-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tips Page */
+.tip-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--pink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero img {
+        margin-top: 20px;
+        max-width: 200px;
+    }
+}
